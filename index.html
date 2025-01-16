@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Flask App</title>
+  </head>
+  <body>
+    <h1>Welcome to my app!</h1>
+    {% if name %}
+    <h2>Hello, {{ name }}!</h2>
+    {% endif %}
+    <form action="/process_data" method="POST">
+      <input type="text" name="name" placeholder="Enter your name" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
